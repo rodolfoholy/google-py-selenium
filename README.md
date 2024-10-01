@@ -27,14 +27,14 @@ Windows
 <h3>2. Installing the dependencies</h3>
 
 *	After installing Python, within terminal type: 
-`bash
+`
 pip install selenium pytest allure-pytest webdriver-manager
 `
 
 <h3>3. Installing the Allure Report</h3>
 
 *	Open the Windows PowerShell and type: 
-`bash
+`
 irm get.scoop.sh | iex
 `
 *	In the prompt Console, type the command `allure --version`; if the installation is correct, the installed version will appear.
@@ -48,12 +48,12 @@ Executing Automated Tests
 To execute the automated tests, we will use some commands from the root folder of our project.
 
 *	To execute all implemented scenarios, we use the following code:
-`bash
+`
 pytest test_google.py --alluredir=allure-results
 `
 
 *	To generate and serve the Allure report, you can go to the project folder and execute:
-`bash
+`
 allure serve allure-results
 `
 
